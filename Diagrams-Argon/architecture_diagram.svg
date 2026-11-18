@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" width="100%" height="100%" style="background:#0B0F19; font-family:'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#94A3B8"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#F43F5E"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10B981"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="550" y="38" text-anchor="middle" fill="#F8FAFC" font-size="20" font-weight="bold">AegisHealth AI — Hierarchical Multi-Agent System, RAG &amp; Safety Gate Architecture</text>
+  <text x="550" y="60" text-anchor="middle" fill="#94A3B8" font-size="13">Microsoft Agent Framework • Groq Llama-3.3 &amp; Whisper • FAISS Vector RAG • SQLite • SMTP Gmail</text>
+
+  <!-- Patient Input Box -->
+  <rect x="40" y="95" width="220" height="80" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+  <text x="150" y="125" text-anchor="middle" fill="#38BDF8" font-size="14" font-weight="bold">1. Multimodal Patient Input</text>
+  <text x="150" y="145" text-anchor="middle" fill="#CBD5E1" font-size="11">• Web Portal Text Form</text>
+  <text x="150" y="162" text-anchor="middle" fill="#CBD5E1" font-size="11">• Groq Whisper Voice Call + Twilio</text>
+
+  <!-- Intake Agent -->
+  <rect x="320" y="95" width="220" height="80" rx="10" fill="#1E293B" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="430" y="125" text-anchor="middle" fill="#A78BFA" font-size="14" font-weight="bold">2. Intake Agent</text>
+  <text x="430" y="145" text-anchor="middle" fill="#CBD5E1" font-size="11">Extracts PatientIntakeRecord</text>
+  <text x="430" y="162" text-anchor="middle" fill="#94A3B8" font-size="11">(Zero Diagnosis Guardrail)</text>
+
+  <!-- Patient Memory Agent -->
+  <rect x="600" y="95" width="230" height="80" rx="10" fill="#1E293B" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="715" y="125" text-anchor="middle" fill="#A78BFA" font-size="14" font-weight="bold">3. Patient Memory Agent</text>
+  <text x="715" y="145" text-anchor="middle" fill="#CBD5E1" font-size="11">Checks Consent &amp; Prior Visit</text>
+  <text x="715" y="162" text-anchor="middle" fill="#94A3B8" font-size="11">SQLite: patient_history (P1001)</text>
+
+  <!-- Safety Gate Diamond / Box -->
+  <rect x="380" y="230" width="320" height="90" rx="12" fill="#2A1215" stroke="#F43F5E" stroke-width="2.5"/>
+  <text x="540" y="258" text-anchor="middle" fill="#FDA4AF" font-size="15" font-weight="bold">4. MANDATORY SAFETY GATE</text>
+  <text x="540" y="278" text-anchor="middle" fill="#FECDD3" font-size="12">Deterministic safety_rules.yaml + Negation Check</text>
+  <text x="540" y="298" text-anchor="middle" fill="#FB7185" font-size="11">Statuses: URGENT | UNCERTAIN | CLEAR</text>
+
+  <!-- Urgent Stop Box (Left Branch) -->
+  <rect x="40" y="235" width="260" height="85" rx="10" fill="#3B0D11" stroke="#F43F5E" stroke-width="2"/>
+  <text x="170" y="262" text-anchor="middle" fill="#F43F5E" font-size="14" font-weight="bold">🚨 URGENT / UNCERTAIN STOP</text>
+  <text x="170" y="282" text-anchor="middle" fill="#FECDD3" font-size="11">• Halts Normal Routing Immediately</text>
+  <text x="170" y="300" text-anchor="middle" fill="#FECDD3" font-size="11">• Emits Emergency 112 / Staff Escalation</text>
+
+  <!-- Triage Router Agent -->
+  <rect x="410" y="375" width="260" height="80" rx="10" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+  <text x="540" y="403" text-anchor="middle" fill="#34D399" font-size="14" font-weight="bold">5. Triage Router Agent</text>
+  <text x="540" y="423" text-anchor="middle" fill="#CBD5E1" font-size="11">Maps Concern to departments.yaml</text>
+  <text x="540" y="440" text-anchor="middle" fill="#94A3B8" font-size="11">(GEN_MED, ORTHO, ENT, DERM, OPHTH, CARDIO)</text>
+
+  <!-- Parallel Fan-Out Box A: Information Agent (RAG) -->
+  <rect x="170" y="505" width="310" height="90" rx="10" fill="#0F2922" stroke="#10B981" stroke-width="2"/>
+  <text x="325" y="532" text-anchor="middle" fill="#34D399" font-size="14" font-weight="bold">6A. Information Agent (FAISS RAG)</text>
+  <text x="325" y="552" text-anchor="middle" fill="#CBD5E1" font-size="11">• Embeddings: all-MiniLM-L6-v2</text>
+  <text x="325" y="570" text-anchor="middle" fill="#CBD5E1" font-size="11">• Metadata Filtered by department_id</text>
+  <text x="325" y="586" text-anchor="middle" fill="#6EE7B7" font-size="11">• Outputs Grounded Prep + Citations (.md)</text>
+
+  <!-- Parallel Fan-Out Box B: Appointment Agent (SQLite) -->
+  <rect x="600" y="505" width="310" height="90" rx="10" fill="#0F2922" stroke="#10B981" stroke-width="2"/>
+  <text x="755" y="532" text-anchor="middle" fill="#34D399" font-size="14" font-weight="bold">6B. Appointment Agent (SQLite)</text>
+  <text x="755" y="552" text-anchor="middle" fill="#CBD5E1" font-size="11">• Queries appointment_slots Table</text>
+  <text x="755" y="570" text-anchor="middle" fill="#CBD5E1" font-size="11">• Verifies Real Slot Availability</text>
+  <text x="755" y="586" text-anchor="middle" fill="#6EE7B7" font-size="11">• Atomic Slot Booking (BK-XXXX)</text>
+
+  <!-- Response Aggregator & Gmail -->
+  <rect x="330" y="630" width="420" height="70" rx="10" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+  <text x="540" y="655" text-anchor="middle" fill="#38BDF8" font-size="14" font-weight="bold">7. Response Aggregator + Gmail SMTP Notification</text>
+  <text x="540" y="675" text-anchor="middle" fill="#CBD5E1" font-size="11">Combines Routing + RAG + Slots + Execution Trace + Mandatory Disclaimer</text>
+  <text x="540" y="692" text-anchor="middle" fill="#94A3B8" font-size="11">Dispatches Confirmed Booking Ticket to Operator Gmail</text>
+
+  <!-- Connectors -->
+  <line x1="260" y1="135" x2="318" y2="135" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="540" y1="135" x2="598" y2="135" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 715 175 L 715 205 L 540 205 L 540 228" fill="none" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Urgent Branch Arrow -->
+  <line x1="380" y1="275" x2="302" y2="275" stroke="#F43F5E" stroke-width="2.5" marker-end="url(#arrow-red)"/>
+  <text x="340" y="265" text-anchor="middle" fill="#F43F5E" font-size="11" font-weight="bold">URGENT</text>
+
+  <!-- Urgent to Aggregator -->
+  <path d="M 120 320 L 120 665 L 328 665" fill="none" stroke="#F43F5E" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-red)"/>
+
+  <!-- Clear Branch Arrow -->
+  <line x1="540" y1="320" x2="540" y2="373" stroke="#10B981" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <text x="568" y="352" fill="#10B981" font-size="11" font-weight="bold">CLEAR</text>
+
+  <!-- Fan-Out Arrows -->
+  <path d="M 540 455 L 540 480 L 325 480 L 325 503" fill="none" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M 540 455 L 540 480 L 755 480 L 755 503" fill="none" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="540" y="474" text-anchor="middle" fill="#6EE7B7" font-size="11" font-weight="bold">Parallel Fan-Out (asyncio.gather)</text>
+
+  <!-- Fan-In Arrows -->
+  <path d="M 325 595 L 325 612 L 540 612 L 540 628" fill="none" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M 755 595 L 755 612 L 540 612 L 540 628" fill="none" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-green)"/>
+</svg>

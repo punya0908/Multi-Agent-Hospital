@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1151.7379999999998 300.55" width="1151.7379999999998" height="300.55" style="--bg:#141414;--fg:#fafafa;--line:#8a8a8a;--accent:#8cb7fa;--muted:#b5b5b5;--surface:#1f1f1f;--border:#424242">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Google Sans', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="Patient" data-to="System" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Spoken/Text Concern,
+Basic Details &amp; Consent Flag" points="204.99349999999998,85.11666666666667 256.17499999999995,85.11666666666667 256.17499999999995,58 446.881,58 446.881,88.9 458.881,88.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="System" data-to="Patient" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Routed Dept, RAG Instructions,
+Offered Slots OR 112 Urgent Alert
+(Visual UI + Spoken TTS)" points="458.881,145.9 242.51299999999998,145.9 242.51299999999998,112.01666666666668 204.99349999999998,112.01666666666668" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Patient" data-to="System" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Explicit Slot Selection" points="204.99349999999998,98.56666666666668 289.43899999999996,98.56666666666668 289.43899999999996,98.60000000000001 446.881,98.60000000000001 446.881,117.4 458.881,117.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="System" data-to="GroqAPI" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Prompt / Audio Stream" points="458.881,202.9 446.881,202.9 446.881,241.4 287.063,241.4 287.063,230.03333333333336 244.26649999999995,230.03333333333336" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="GroqAPI" data-to="System" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Structured Extraction,
+Routing &amp; Transcription" points="244.26649999999995,212.10000000000002 278.74699999999996,212.10000000000002 278.74699999999996,200.8 446.881,200.8 446.881,174.4 458.881,174.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="System" data-to="Admin" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Booking Confirmation Email (BK-XXXX)
+&amp; Live Agent Execution Trace" points="629.881,145.9 914.919,145.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="Patient" data-to="System" data-label="Spoken/Text Concern,
+Basic Details &amp; Consent Flag">
+  <rect x="264.17499999999995" y="35" width="150.706" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="339.52799999999996" y="57.3" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="339.52799999999996" dy="-3.3000000000000007">Spoken/Text Concern,</tspan><tspan x="339.52799999999996" dy="14.3">Basic Details &amp; Consent Flag</tspan></text>
+</g>
+<g class="edge-label" data-from="System" data-to="Patient" data-label="Routed Dept, RAG Instructions,
+Offered Slots OR 112 Urgent Alert
+(Visual UI + Spoken TTS)">
+  <rect x="250.513" y="115.90000000000002" width="164.368" height="58.900000000000006" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="332.697" y="145.35000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="332.697" dy="-10.450000000000001">Routed Dept, RAG Instructions,</tspan><tspan x="332.697" dy="14.3">Offered Slots OR 112 Urgent Alert</tspan><tspan x="332.697" dy="14.3">(Visual UI + Spoken TTS)</tspan></text>
+</g>
+<g class="edge-label" data-from="Patient" data-to="System" data-label="Explicit Slot Selection">
+  <rect x="297.43899999999996" y="82.60000000000001" width="117.44200000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="356.15999999999997" y="97.75000000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Explicit Slot Selection</text>
+</g>
+<g class="edge-label" data-from="System" data-to="GroqAPI" data-label="Prompt / Audio Stream">
+  <rect x="295.063" y="225.4" width="119.81800000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="354.972" y="240.55" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Prompt / Audio Stream</text>
+</g>
+<g class="edge-label" data-from="GroqAPI" data-to="System" data-label="Structured Extraction,
+Routing &amp; Transcription">
+  <rect x="286.74699999999996" y="177.8" width="128.13400000000001" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="350.81399999999996" y="200.10000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="350.81399999999996" dy="-3.3000000000000007">Structured Extraction,</tspan><tspan x="350.81399999999996" dy="14.3">Routing &amp; Transcription</tspan></text>
+</g>
+<g class="edge-label" data-from="System" data-to="Admin" data-label="Booking Confirmation Email (BK-XXXX)
+&amp; Live Agent Execution Trace">
+  <rect x="673.881" y="122.90000000000002" width="197.03799999999998" height="44.6" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="772.4" y="145.20000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)"><tspan x="772.4" dy="-3.3000000000000007">Booking Confirmation Email (BK-XXXX)</tspan><tspan x="772.4" dy="14.3">&amp; Live Agent Execution Trace</tspan></text>
+</g>
+<g class="node" data-id="Patient" data-label="👤 Patient
+(Text / Voice Caller)" data-shape="stadium">
+  <rect x="41.519499999999994" y="71.66666666666667" width="163.474" height="53.800000000000004" rx="26.900000000000002" ry="26.900000000000002" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="123.25649999999999" y="98.56666666666668" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="123.25649999999999" dy="-3.9000000000000012">👤 Patient</tspan><tspan x="123.25649999999999" dy="16.900000000000002">(Text / Voice Caller)</tspan></text>
+</g>
+<g class="node" data-id="Admin" data-label="🏥 Hospital Operator /
+Evaluator (Gmail &amp; Trace)" data-shape="stadium">
+  <rect x="914.919" y="119" width="196.819" height="53.800000000000004" rx="26.900000000000002" ry="26.900000000000002" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1013.3285" y="145.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1013.3285" dy="-3.9000000000000012">🏥 Hospital Operator /</tspan><tspan x="1013.3285" dy="16.900000000000002">Evaluator (Gmail &amp; Trace)</tspan></text>
+</g>
+<g class="node" data-id="GroqAPI" data-label="☁️ Groq Cloud API
+(Llama-3.3-70B &amp; Whisper)" data-shape="rectangle">
+  <rect x="41.519499999999994" y="194.16666666666669" width="202.74699999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="142.89299999999997" y="221.0666666666667" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="142.89299999999997" dy="-3.9000000000000012">☁️ Groq Cloud API</tspan><tspan x="142.89299999999997" dy="16.900000000000002">(Llama-3.3-70B &amp; Whisper)</tspan></text>
+</g>
+<g class="node" data-id="System" data-label="0.0
+AegisHealth AI
+Hospital Intake &amp;
+Routing System" data-shape="circle">
+  <circle cx="544.381" cy="145.9" r="85.5" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="544.381" y="145.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="544.381" dy="-20.8">0.0</tspan><tspan x="544.381" dy="16.900000000000002">AegisHealth AI</tspan><tspan x="544.381" dy="16.900000000000002">Hospital Intake &amp;</tspan><tspan x="544.381" dy="16.900000000000002">Routing System</tspan></text>
+</g>
+</svg>

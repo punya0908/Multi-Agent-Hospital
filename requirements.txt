@@ -1,0 +1,15 @@
+agent-framework
+agent-framework-openai
+openai
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+pyyaml
+faiss-cpu
+sentence-transformers
+pymupdf
+pytest
+python-dotenv
+python-multipart

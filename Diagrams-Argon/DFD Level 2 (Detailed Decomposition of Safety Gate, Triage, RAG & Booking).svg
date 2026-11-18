@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 863.1046666666666 1568.1000000000001" width="863.1046666666666" height="1568.1000000000001" style="--bg:#141414;--fg:#fafafa;--line:#8a8a8a;--accent:#8cb7fa;--muted:#b5b5b5;--surface:#1f1f1f;--border:#424242">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Google Sans', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Intake_And_Memory" data-label="1.0 Intake &amp; Consent Memory">
+  <rect x="196.87575" y="40" width="194.73300000000003" height="317.40000000000003" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="196.87575" y="40" width="194.73300000000003" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="208.87575" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">1.0 Intake &amp; Consent Memory</text>
+</g>
+<g class="subgraph" data-id="Safety_Subsystem" data-label="2.0 Mandatory Safety Gate">
+  <rect x="368.3355833333334" y="417.40000000000003" width="248.7525" height="317.40000000000003" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="368.3355833333334" y="417.40000000000003" width="248.7525" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="380.3355833333334" y="431.40000000000003" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">2.0 Mandatory Safety Gate</text>
+</g>
+<g class="subgraph" data-id="Routing_And_Parallel_Execution" data-label="3.0 - 5.0 Triage, RAG &amp; Slot Engine">
+  <rect x="106.22033333333334" y="938" width="443.561" height="317.40000000000003" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="106.22033333333334" y="938" width="443.561" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="118.22033333333334" y="952" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">3.0 - 5.0 Triage, RAG &amp; Slot Engine</text>
+</g>
+<g class="subgraph" data-id="Output_And_Notifications" data-label="6.0 Aggregator &amp; Gmail Dispatcher">
+  <rect x="112.65020833333335" y="1414.3000000000002" width="372.86899999999997" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="112.65020833333335" y="1414.3000000000002" width="372.86899999999997" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="124.65020833333335" y="1428.3000000000002" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">6.0 Aggregator &amp; Gmail Dispatcher</text>
+</g>
+<polyline class="edge" data-from="P1_3" data-to="D_Hist" data-style="solid" data-arrow-start="true" data-arrow-end="true" points="294.24225,353.85 294.24225,407.625 267.12008333333335,407.625 267.12008333333335,665.9000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<polyline class="edge" data-from="D_Rules" data-to="P2_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="541.5075833333334,350.95000000000005 541.5075833333334,539.2 499.7145833333334,539.2 499.7145833333334,563.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1_3" data-to="P2_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="294.24225,353.85 294.24225,407.625 457.9215833333334,407.625 457.9215833333334,461.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2_3" data-to="P6_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="If URGENT/UNCERTAIN (Halt)" points="533.50575,718.8000000000001 533.50575,821.1 749.7406666666667,821.1 749.7406666666667,1396.3000000000002 431.79995833333334,1396.3000000000002 431.7999583333333,1458.3000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2_3" data-to="P3_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="If CLEAR" points="465.9234166666667,718.8000000000001 465.9234166666667,752.8000000000001 242.2786666666667,752.8000000000001 242.2786666666667,920 319.4286666666667,920 319.4286666666667,982" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D_Depts" data-to="P3_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="336.1271666666667,884 336.1271666666667,920 376.63699999999994,920 376.63699999999994,982" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D_FAISS" data-to="P4_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="547.6081666666666,884 547.6081666666666,920 477.86800000000005,920 477.868,1047.8 472.4975,1047.8 472.4975,1083.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D_Slots" data-to="P5_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="96.22033333333331,1309.4 96.22033333333331,920 220.16766666666666,920 220.16766666666666,1047.8 228.50816666666665,1047.8 228.50816666666665,1083.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4_2" data-to="P6_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="444.2638333333333,1239.4 444.26383333333325,1384.3000000000002 446.5418333333333,1384.3000000000002 446.5418333333333,1384.3000000000002 394.08070833333323,1384.3000000000002 394.08070833333323,1458.3000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P5_1" data-to="P6_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="254.27183333333335,1137.6 254.27183333333335,1161.6 394.0807083333333,1161.6 394.0807083333333,1458.3000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P5_2" data-to="D_Slots" data-style="solid" data-arrow-start="true" data-arrow-end="true" points="206.92133333333334,1239.3999999999999 206.92133333333334,1274.4 124.3305,1274.4 124.3305,1309.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<polyline class="edge" data-from="P5_2" data-to="P6_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="206.92133333333334,1239.3999999999999 206.92133333333334,1274.4 209.64620833333333,1274.4 209.64620833333333,1458.3000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1_1" data-to="P1_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="294.24225,137.8 294.24225,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1_2" data-to="P1_3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="294.24225,239.60000000000002 294.24225,300.05" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2_1" data-to="P2_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="457.9215833333334,515.2 457.9215833333334,539.2 499.7145833333334,539.2 499.7145833333334,563.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2_2" data-to="P2_3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="499.7145833333334,617 499.7145833333334,665" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3_1" data-to="P4_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="348.0328333333333,1035.8 348.0328333333333,1059.8 444.2638333333333,1059.8 444.2638333333333,1083.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4_1" data-to="P4_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="444.2638333333333,1137.6 444.2638333333333,1185.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3_1" data-to="P5_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="348.0328333333333,1035.8 348.0328333333333,1059.8 254.27183333333335,1059.8 254.27183333333335,1083.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P5_1" data-to="P5_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="254.27183333333335,1137.6 254.27183333333335,1161.6 206.92133333333334,1161.6 206.92133333333334,1185.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="P2_3" data-to="P6_1" data-label="If URGENT/UNCERTAIN (Halt)">
+  <rect x="672.2406666666667" y="1359.0000000000002" width="154.86399999999998" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="749.6726666666667" y="1374.1500000000003" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">If URGENT/UNCERTAIN (Halt)</text>
+</g>
+<g class="edge-label" data-from="P2_3" data-to="P3_1" data-label="If CLEAR">
+  <rect x="212.2786666666667" y="759.8000000000001" width="59.824000000000005" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="242.19066666666671" y="774.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">If CLEAR</text>
+</g>
+<g class="node" data-id="D_Hist" data-label="D1: patient_history" data-shape="cylinder">
+  <rect x="193.90458333333336" y="672.9000000000001" width="146.43099999999998" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="193.90458333333336" y1="672.9000000000001" x2="193.90458333333336" y2="709.8000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="340.3355833333334" y1="672.9000000000001" x2="340.3355833333334" y2="709.8000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="267.12008333333335" cy="709.8000000000001" rx="73.21549999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="267.12008333333335" cy="672.9000000000001" rx="73.21549999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="267.12008333333335" y="691.3500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D1: patient_history</text>
+</g>
+<g class="node" data-id="D_Rules" data-label="D2: safety_rules.yaml" data-shape="cylinder">
+  <rect x="457.91808333333336" y="307.05" width="167.179" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="457.91808333333336" y1="307.05" x2="457.91808333333336" y2="343.95000000000005" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="625.0970833333333" y1="307.05" x2="625.0970833333333" y2="343.95000000000005" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="541.5075833333334" cy="343.95000000000005" rx="83.5895" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="541.5075833333334" cy="307.05" rx="83.5895" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="541.5075833333334" y="325.5" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D2: safety_rules.yaml</text>
+</g>
+<g class="node" data-id="D_Depts" data-label="D3: departments.yaml" data-shape="cylinder">
+  <rect x="253.2786666666667" y="840.1" width="165.697" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="253.2786666666667" y1="840.1" x2="253.2786666666667" y2="877" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="418.9756666666667" y1="840.1" x2="418.9756666666667" y2="877" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="336.1271666666667" cy="877" rx="82.8485" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="336.1271666666667" cy="840.1" rx="82.8485" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="336.1271666666667" y="858.5500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D3: departments.yaml</text>
+</g>
+<g class="node" data-id="D_FAISS" data-label="D4: FAISS Index + .md Docs" data-shape="cylinder">
+  <rect x="446.9756666666667" y="840.1" width="201.26500000000001" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="446.9756666666667" y1="840.1" x2="446.9756666666667" y2="877" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="648.2406666666667" y1="840.1" x2="648.2406666666667" y2="877" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="547.6081666666668" cy="877" rx="100.63250000000001" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="547.6081666666668" cy="840.1" rx="100.63250000000001" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="547.6081666666668" y="858.5500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D4: FAISS Index + .md Docs</text>
+</g>
+<g class="node" data-id="D_Slots" data-label="D5: appointment_slots" data-shape="cylinder">
+  <rect x="40" y="1316.4" width="168.661" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="40" y1="1316.4" x2="40" y2="1353.3000000000002" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="208.661" y1="1316.4" x2="208.661" y2="1353.3000000000002" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="124.3305" cy="1353.3000000000002" rx="84.3305" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="124.3305" cy="1316.4" rx="84.3305" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="124.3305" y="1334.8500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D5: appointment_slots</text>
+</g>
+<g class="node" data-id="P1_1" data-label="1.1 Whisper STT
+Transcription" data-shape="rounded">
+  <rect x="228.43675000000002" y="84" width="131.611" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="294.24225" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="294.24225" dy="-3.9000000000000012">1.1 Whisper STT</tspan><tspan x="294.24225" dy="16.900000000000002">Transcription</tspan></text>
+</g>
+<g class="node" data-id="P1_2" data-label="1.2 IntakeAgent
+Schema Extraction" data-shape="rounded">
+  <rect x="218.06275000000002" y="185.8" width="152.359" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="294.24225" y="212.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="294.24225" dy="-3.9000000000000012">1.2 IntakeAgent</tspan><tspan x="294.24225" dy="16.900000000000002">Schema Extraction</tspan></text>
+</g>
+<g class="node" data-id="P1_3" data-label="1.3 Consent Verifier &amp;
+History Lookup" data-shape="rounded">
+  <rect x="212.87575" y="300.05" width="162.73300000000003" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="294.24225" y="326.95" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="294.24225" dy="-3.9000000000000012">1.3 Consent Verifier &amp;</tspan><tspan x="294.24225" dy="16.900000000000002">History Lookup</tspan></text>
+</g>
+<g class="node" data-id="P2_1" data-label="2.1 Negation Prefix
+Scanner" data-shape="rounded">
+  <rect x="384.3355833333334" y="461.40000000000003" width="147.17200000000003" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="457.9215833333334" y="488.3" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="457.9215833333334" dy="-3.9000000000000012">2.1 Negation Prefix</tspan><tspan x="457.9215833333334" dy="16.900000000000002">Scanner</tspan></text>
+</g>
+<g class="node" data-id="P2_2" data-label="2.2 Deterministic YAML
+Keyword Matcher" data-shape="rounded">
+  <rect x="410.9380833333334" y="563.2" width="177.55299999999997" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="499.7145833333334" y="590.1" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="499.7145833333334" dy="-3.9000000000000012">2.2 Deterministic YAML</tspan><tspan x="499.7145833333334" dy="16.900000000000002">Keyword Matcher</tspan></text>
+</g>
+<g class="node" data-id="P2_3" data-label="2.3 LLM Semantic Red-Flag
+Verifier (Fail-Closed)" data-shape="rounded">
+  <rect x="398.3410833333334" y="665" width="202.74699999999996" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="499.7145833333334" y="691.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="499.7145833333334" dy="-3.9000000000000012">2.3 LLM Semantic Red-Flag</tspan><tspan x="499.7145833333334" dy="16.900000000000002">Verifier (Fail-Closed)</tspan></text>
+</g>
+<g class="node" data-id="P3_1" data-label="3.1 TriageRouterAgent
+Dept Classification" data-shape="rounded">
+  <rect x="262.2203333333333" y="982" width="171.62499999999997" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="348.0328333333333" y="1008.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="348.0328333333333" dy="-3.9000000000000012">3.1 TriageRouterAgent</tspan><tspan x="348.0328333333333" dy="16.900000000000002">Dept Classification</tspan></text>
+</g>
+<g class="node" data-id="P4_1" data-label="4.1 Metadata-Filtered
+FAISS Vector Search" data-shape="rounded">
+  <rect x="359.5628333333333" y="1083.8" width="169.402" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="444.2638333333333" y="1110.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="444.2638333333333" dy="-3.9000000000000012">4.1 Metadata-Filtered</tspan><tspan x="444.2638333333333" dy="16.900000000000002">FAISS Vector Search</tspan></text>
+</g>
+<g class="node" data-id="P4_2" data-label="4.2 Citation &amp; Instruction
+Grounder" data-shape="rounded">
+  <rect x="354.7463333333334" y="1185.6" width="179.03499999999997" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="444.26383333333337" y="1212.5" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="444.26383333333337" dy="-3.9000000000000012">4.2 Citation &amp; Instruction</tspan><tspan x="444.26383333333337" dy="16.900000000000002">Grounder</tspan></text>
+</g>
+<g class="node" data-id="P5_1" data-label="5.1 SQLite Available
+Slot Query" data-shape="rounded">
+  <rect x="176.98083333333335" y="1083.8" width="154.582" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="254.27183333333335" y="1110.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="254.27183333333335" dy="-3.9000000000000012">5.1 SQLite Available</tspan><tspan x="254.27183333333335" dy="16.900000000000002">Slot Query</tspan></text>
+</g>
+<g class="node" data-id="P5_2" data-label="5.2 Atomic Slot Lock
+(is_available=False)" data-shape="rounded">
+  <rect x="122.22033333333334" y="1185.6" width="169.402" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="206.92133333333334" y="1212.5" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="206.92133333333334" dy="-3.9000000000000012">5.2 Atomic Slot Lock</tspan><tspan x="206.92133333333334" dy="16.900000000000002">(is_available=False)</tspan></text>
+</g>
+<g class="node" data-id="P6_1" data-label="6.1 Trace Logger &amp;
+Disclaimer Injector" data-shape="rounded">
+  <rect x="318.6422083333333" y="1458.3000000000002" width="150.877" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="394.0807083333333" y="1485.2000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="394.0807083333333" dy="-3.9000000000000012">6.1 Trace Logger &amp;</tspan><tspan x="394.0807083333333" dy="16.900000000000002">Disclaimer Injector</tspan></text>
+</g>
+<g class="node" data-id="P6_2" data-label="6.2 SMTP SSL Gmail
+Dispatcher" data-shape="rounded">
+  <rect x="128.65020833333335" y="1458.3000000000002" width="161.99199999999996" height="53.800000000000004" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="209.64620833333333" y="1485.2000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="209.64620833333333" dy="-3.9000000000000012">6.2 SMTP SSL Gmail</tspan><tspan x="209.64620833333333" dy="16.900000000000002">Dispatcher</tspan></text>
+</g>
+</svg>

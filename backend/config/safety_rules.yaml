@@ -1,0 +1,37 @@
+# ==============================================================================
+# ILLUSTRATIVE NON-CLINICAL DEMO RULES ONLY
+# These rules are simplified keyword patterns for educational/demo workflow
+# routing and DO NOT constitute clinical triage or medical advice.
+# ==============================================================================
+
+negation_prefixes:
+  - "no "
+  - "not experiencing "
+  - "without "
+  - "denies "
+
+urgent_keywords:
+  - rule_id: "RULE_URG_01"
+    keyword: "chest pain"
+  - rule_id: "RULE_URG_02"
+    keyword: "difficulty breathing"
+  - rule_id: "RULE_URG_03"
+    keyword: "shortness of breath"
+  - rule_id: "RULE_URG_04"
+    keyword: "severe bleeding"
+  - rule_id: "RULE_URG_05"
+    keyword: "unconscious"
+  - rule_id: "RULE_URG_06"
+    keyword: "stroke"
+  - rule_id: "RULE_URG_07"
+    keyword: "suicidal"
+  - rule_id: "RULE_URG_08"
+    keyword: "crushing pain"
+
+uncertain_keywords:
+  - rule_id: "RULE_UNC_01"
+    keyword: "confused"
+  - rule_id: "RULE_UNC_02"
+    keyword: "dizzy and fainting"
+  - rule_id: "RULE_UNC_03"
+    keyword: "not sure if emergency"

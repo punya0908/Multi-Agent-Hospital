@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2971.4389999999994 271.5" width="2971.4389999999994" height="271.5" style="--bg:#141414;--fg:#fafafa;--line:#8a8a8a;--accent:#8cb7fa;--muted:#b5b5b5;--surface:#1f1f1f;--border:#424242">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Google Sans', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Offline_Indexing" data-label="Phase 1: Knowledge Base Ingestion &amp; Indexing (Startup)">
+  <rect x="40" y="69.89999999999999" width="1248.85" height="161.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="69.89999999999999" width="1248.85" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="83.89999999999999" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Phase 1: Knowledge Base Ingestion &amp; Indexing (Startup)</text>
+</g>
+<g class="subgraph" data-id="Online_Retrieval" data-label="Phase 2: Runtime Grounded Retrieval &amp; Generation">
+  <rect x="1348.85" y="40" width="1582.5889999999997" height="153.375" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1348.85" y="40" width="1582.5889999999997" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1360.85" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Phase 2: Runtime Grounded Retrieval &amp; Generation</text>
+</g>
+<polyline class="edge" data-from="FAISS" data-to="FilterSearch" data-style="dotted" data-arrow-start="false" data-arrow-end="true" points="1272.85,164.7 1759.2079999999999,164.7 1759.2079999999999,153.80833333333334 1795.2079999999999,153.80833333333334" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="MD" data-to="Parser" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="258.006,164.7 306.006,164.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Parser" data-to="Meta" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="562.846,164.7 610.846,164.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Meta" data-to="EmbedModel" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="814.3340000000001,164.7 862.3340000000001,164.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="EmbedModel" data-to="FAISS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1047.297,164.7 1095.297,164.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RouterOut" data-to="QueryEmbed" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1552.0359999999998,119.35 1600.0359999999998,119.35" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="QueryEmbed" data-to="FilterSearch" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1747.2079999999999,119.35 1759.2079999999999,119.35 1759.2079999999999,130.24166666666667 1795.2079999999999,130.24166666666667" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="FilterSearch" data-to="TopK" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1994.991,142.025 2042.991,142.025" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="TopK" data-to="GroundedLLM" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2279.8239999999996,142.025 2327.8239999999996,142.025" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="GroundedLLM" data-to="OutputSchema" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2645.4259999999995,142.025 2693.4259999999995,142.025" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="MD" data-label="6 Markdown Docs
+backend/knowledge_base/
+(gen_med, ortho, ent,
+derm, ophth, cardio.md)" data-shape="cylinder">
+  <rect x="56" y="120.89999999999999" width="202.00599999999997" height="87.60000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="56" y1="120.89999999999999" x2="56" y2="208.5" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="258.006" y1="120.89999999999999" x2="258.006" y2="208.5" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="157.003" cy="208.5" rx="101.00299999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="157.003" cy="120.89999999999999" rx="101.00299999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="157.003" y="164.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="157.003" dy="-20.8">6 Markdown Docs</tspan><tspan x="157.003" dy="16.900000000000002">backend/knowledge_base/</tspan><tspan x="157.003" dy="16.900000000000002">(gen_med, ortho, ent,</tspan><tspan x="157.003" dy="16.900000000000002">derm, ophth, cardio.md)</tspan></text>
+</g>
+<g class="node" data-id="Parser" data-label="Document Loader &amp; Section Chunker" data-shape="rectangle">
+  <rect x="306.006" y="146.25" width="256.84" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="434.42599999999993" y="164.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Document Loader &amp; Section Chunker</text>
+</g>
+<g class="node" data-id="Meta" data-label="Attach Metadata:
+source_file + department_id" data-shape="rectangle">
+  <rect x="610.846" y="137.8" width="203.488" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="712.59" y="164.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="712.59" dy="-3.9000000000000012">Attach Metadata:</tspan><tspan x="712.59" dy="16.900000000000002">source_file + department_id</tspan></text>
+</g>
+<g class="node" data-id="EmbedModel" data-label="Sentence-Transformers
+all-MiniLM-L6-v2
+(384-d Dense Vectors)" data-shape="rectangle">
+  <rect x="862.3340000000001" y="129.35" width="184.96299999999997" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="954.8155" y="164.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="954.8155" dy="-12.350000000000001">Sentence-Transformers</tspan><tspan x="954.8155" dy="16.900000000000002">all-MiniLM-L6-v2</tspan><tspan x="954.8155" dy="16.900000000000002">(384-d Dense Vectors)</tspan></text>
+</g>
+<g class="node" data-id="FAISS" data-label="FAISS CPU Index
+(IndexFlatL2 / Cosine)
++ Metadata Store" data-shape="cylinder">
+  <rect x="1095.297" y="129.35" width="177.55299999999997" height="70.7" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1095.297" y1="129.35" x2="1095.297" y2="200.05" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1272.85" y1="129.35" x2="1272.85" y2="200.05" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1184.0735" cy="200.05" rx="88.77649999999998" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1184.0735" cy="129.35" rx="88.77649999999998" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1184.0735" y="164.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1184.0735" dy="-12.350000000000001">FAISS CPU Index</tspan><tspan x="1184.0735" dy="16.900000000000002">(IndexFlatL2 / Cosine)</tspan><tspan x="1184.0735" dy="16.900000000000002">+ Metadata Store</tspan></text>
+</g>
+<g class="node" data-id="RouterOut" data-label="TriageRouter Output:
+department_id = 'ORTHO'
++ Patient Concern Query" data-shape="rectangle">
+  <rect x="1364.85" y="84" width="187.18599999999998" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1458.443" y="119.35" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1458.443" dy="-12.350000000000001">TriageRouter Output:</tspan><tspan x="1458.443" dy="16.900000000000002">department_id = &#39;ORTHO&#39;</tspan><tspan x="1458.443" dy="16.900000000000002">+ Patient Concern Query</tspan></text>
+</g>
+<g class="node" data-id="QueryEmbed" data-label="Encode Query via
+all-MiniLM-L6-v2" data-shape="rectangle">
+  <rect x="1600.0359999999998" y="92.45" width="147.17200000000003" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1673.6219999999998" y="119.35000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1673.6219999999998" dy="-3.9000000000000012">Encode Query via</tspan><tspan x="1673.6219999999998" dy="16.900000000000002">all-MiniLM-L6-v2</tspan></text>
+</g>
+<g class="node" data-id="FilterSearch" data-label="FAISS Similarity Search
+WITH Strict Metadata Filter:
+department_id == 'ORTHO'" data-shape="rectangle">
+  <rect x="1795.2079999999999" y="106.675" width="199.78299999999996" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1895.0994999999998" y="142.025" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1895.0994999999998" dy="-12.350000000000001">FAISS Similarity Search</tspan><tspan x="1895.0994999999998" dy="16.900000000000002">WITH Strict Metadata Filter:</tspan><tspan x="1895.0994999999998" dy="16.900000000000002">department_id == &#39;ORTHO&#39;</tspan></text>
+</g>
+<g class="node" data-id="TopK" data-label="Top-K Relevant Snippets
+(Prevents Cross-Dept Leakage)" data-shape="rectangle">
+  <rect x="2042.991" y="115.125" width="236.83299999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2161.4075" y="142.025" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2161.4075" dy="-3.9000000000000012">Top-K Relevant Snippets</tspan><tspan x="2161.4075" dy="16.900000000000002">(Prevents Cross-Dept Leakage)</tspan></text>
+</g>
+<g class="node" data-id="GroundedLLM" data-label="InformationAgent (Groq Llama-3.3)
+Strict Prompt: Extract Location,
+Prep Steps &amp; Docs to Bring ONLY from Snippets" data-shape="rectangle">
+  <rect x="2327.8239999999996" y="106.675" width="317.6019999999999" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2486.6249999999995" y="142.025" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2486.6249999999995" dy="-12.350000000000001">InformationAgent (Groq Llama-3.3)</tspan><tspan x="2486.6249999999995" dy="16.900000000000002">Strict Prompt: Extract Location,</tspan><tspan x="2486.6249999999995" dy="16.900000000000002">Prep Steps &amp; Docs to Bring ONLY from Snippets</tspan></text>
+</g>
+<g class="node" data-id="OutputSchema" data-label="DepartmentInformation Schema
++ Verifiable Source Citations
+(e.g., 📄 ortho.md)" data-shape="rectangle">
+  <rect x="2693.4259999999995" y="106.675" width="222.013" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2804.4324999999994" y="142.025" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2804.4324999999994" dy="-12.350000000000001">DepartmentInformation Schema</tspan><tspan x="2804.4324999999994" dy="16.900000000000002">+ Verifiable Source Citations</tspan><tspan x="2804.4324999999994" dy="16.900000000000002">(e.g., 📄 ortho.md)</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1460.5707499999994 3439.214000000001" width="1460.5707499999994" height="3439.214000000001" style="--bg:#141414;--fg:#fafafa;--line:#8a8a8a;--accent:#8cb7fa;--muted:#b5b5b5;--surface:#1f1f1f;--border:#424242">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Google Sans', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="Start" data-to="InputMode" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="382.2218333333333,76.9 382.2218333333333,124.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="InputMode" data-to="Whisper" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Voice Audio / Mic" points="359.3741666666666,239.13833333333332 359.3741666666666,297.986 327.6564166666666,297.986 327.6564166666666,378.28600000000006" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Whisper" data-to="Transcript" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="327.6564166666666,415.18600000000004 327.65641666666664,463.18600000000004" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Transcript" data-to="IntakeNode" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="327.65641666666664,500.086 327.65641666666664,536.086 364.1151666666666,536.086 364.1151666666666,548.086" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="InputMode" data-to="IntakeNode" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Text Form / Demo Preset" points="405.06949999999995,239.13833333333332 405.06949999999995,366.28600000000006 561.7669166666665,366.28600000000006 561.7669166666665,536.086 400.3284999999999,536.086 400.3284999999999,548.086" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="IntakeNode" data-to="ConsentCheck" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="382.2218333333332,584.986 382.2218333333333,632.986" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ConsentCheck" data-to="MemLookup" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="322.2006666666666,933.0918333333332 322.2006666666666,1029.1129999999998 285.7419166666666,1029.1129999999998 285.7419166666666,1109.4129999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ConsentCheck" data-to="MemSkip" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No" points="442.24299999999994,933.0918333333332 442.24299999999994,1029.1129999999998 651.3509166666665,1029.1129999999998 651.3509166666665,1109.4129999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="MemLookup" data-to="SafetyGate" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="285.7419166666666,1146.3129999999999 285.7419166666666,1170.3129999999999 382.2218333333333,1170.3129999999999 382.2218333333333,1194.3129999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="MemSkip" data-to="SafetyGate" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="651.3509166666665,1146.3129999999999 651.3509166666665,1170.3129999999999 382.2218333333333,1170.3129999999999 382.2218333333333,1194.3129999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SafetyGate" data-to="SafetyDecision" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="382.2218333333333,1231.213 382.2218333333332,1279.213" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SafetyDecision" data-to="UrgentStop" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="URGENT" points="326.0908333333332,1447.6059999999998 326.0908333333332,1866.9349999999997 199.17149999999992,1866.9349999999997 199.17149999999992,1947.2349999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="UrgentStop" data-to="UrgentAdvisory" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="199.17149999999992,1984.1349999999998 199.17149999999992,2638.177" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="UrgentAdvisory" data-to="Aggregator" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="199.17149999999992,2675.077 199.17149999999992,2699.077 690.4298166666665,2699.077 690.4298166666665,2711.077" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SafetyDecision" data-to="HumanEsc" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="UNCERTAIN / Error" points="382.2218333333332,1503.7369999999999 382.2218333333332,1951.8349999999998 428.5804999999999,1951.8349999999998 428.5804999999999,2020.1349999999998 382.2218333333333,2020.1349999999998 382.2218333333333,2032.1349999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="HumanEsc" data-to="Aggregator" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="441.3304999999999,2069.035 441.3304999999999,2687.077 712.4542166666665,2687.077 712.4542166666665,2711.077" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SafetyDecision" data-to="TriageNode" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="CLEAR" points="438.3528333333332,1447.606 438.3528333333332,1515.7369999999999 894.5146666666665,1515.7369999999999 894.5146666666665,1596.0369999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="TriageNode" data-to="ConfCheck" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="894.5146666666665,1632.937 894.5146666666665,1680.937" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ConfCheck" data-to="HumanEsc" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="855.3649999999998,1876.6853333333333 855.3649999999998,1951.8349999999998 576.4281666666666,1951.8349999999998 576.4281666666666,2020.1349999999998 500.43916666666655,2020.1349999999998 500.43916666666655,2032.1349999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ConfCheck" data-to="FanOut" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No: HIGH/MEDIUM" points="933.6643333333332,1876.6853333333331 933.6643333333332,1951.8349999999998 954.3605833333331,1951.8349999999998 954.3605833333331,2032.1349999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="FanOut" data-to="InfoAgent" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="954.3605833333331,2069.035 954.3605833333331,2093.035 697.2022499999999,2093.035 697.2022499999999,2117.035" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="FanOut" data-to="ApptAgent" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="954.3605833333331,2069.035 954.3605833333331,2093.035 1178.7777499999997,2093.035 1178.7777499999997,2117.035" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="InfoAgent" data-to="FanIn" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="697.2022499999999,2153.935 697.2022499999999,2177.935 954.3605833333331,2177.935 954.3605833333331,2201.935" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ApptAgent" data-to="FanIn" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1178.7777499999997,2153.935 1178.7777499999997,2177.935 954.3605833333331,2177.935 954.3605833333331,2201.935" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="FanIn" data-to="SaveMem" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="954.3605833333331,2238.835 954.3605833333331,2286.835" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SaveMem" data-to="PersistHist" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="917.1869166666665,2472.7033333333334 917.1869166666665,2545.877 864.7730833333331,2545.877 864.7730833333331,2638.177" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SaveMem" data-to="Aggregator" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No" points="991.5342499999998,2472.7033333333334 991.5342499999998,2545.877 1043.9480833333332,2545.877 1043.9480833333332,2699.077 756.5030166666664,2699.077 756.5030166666664,2711.077" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PersistHist" data-to="Aggregator" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="864.7730833333331,2675.077 864.7730833333331,2687.077 734.4786166666664,2687.077 734.4786166666664,2711.077" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Aggregator" data-to="RenderUI" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="723.4664166666664,2747.9770000000003 723.4664166666664,2795.9770000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RenderUI" data-to="UserBook" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="723.4664166666664,2832.8770000000004 723.4664166666665,2880.8770000000004" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="UserBook" data-to="EndNode" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="No / Urgent Path" points="686.9102499999998,3063.6578333333337 686.9102499999998,3180.5140000000006 579.4289166666665,3180.5140000000006 579.4289166666665,3350.3140000000008 698.1967499999998,3350.3140000000008 698.1967499999998,3362.3140000000008" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="UserBook" data-to="ConfirmTX" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Yes" points="760.0225833333332,3063.6578333333337 760.0225833333332,3112.2140000000004 867.5039166666666,3112.2140000000004 867.5039166666664,3192.5140000000006" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ConfirmTX" data-to="SendGmail" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="867.5039166666664,3229.4140000000007 867.5039166666666,3277.4140000000007" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="SendGmail" data-to="EndNode" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="867.5039166666666,3314.3140000000008 867.5039166666666,3350.3140000000008 748.7360833333331,3350.3140000000008 748.7360833333331,3362.3140000000008" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="InputMode" data-to="Whisper" data-label="Voice Audio / Mic">
+  <rect x="278.6564166666666" y="304.986" width="97.84000000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="327.5764166666666" y="320.13599999999997" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Voice Audio / Mic</text>
+</g>
+<g class="edge-label" data-from="InputMode" data-to="IntakeNode" data-label="Text Form / Demo Preset">
+  <rect x="495.2669166666666" y="498.78599999999994" width="132.29199999999997" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="561.4129166666665" y="513.9359999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Text Form / Demo Preset</text>
+</g>
+<g class="edge-label" data-from="ConsentCheck" data-to="MemLookup" data-label="Yes">
+  <rect x="267.2419166666666" y="1036.1129999999998" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="285.5709166666666" y="1051.263" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="ConsentCheck" data-to="MemSkip" data-label="No">
+  <rect x="635.8509166666665" y="1036.1129999999998" width="30.718000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="651.2099166666666" y="1051.263" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No</text>
+</g>
+<g class="edge-label" data-from="SafetyDecision" data-to="UrgentStop" data-label="URGENT">
+  <rect x="168.67149999999992" y="1873.9349999999997" width="60.418000000000006" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="198.88049999999993" y="1889.0849999999998" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">URGENT</text>
+</g>
+<g class="edge-label" data-from="SafetyDecision" data-to="HumanEsc" data-label="UNCERTAIN / Error">
+  <rect x="373.0804999999999" y="1958.8349999999998" width="110.90800000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="428.5344999999999" y="1973.985" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">UNCERTAIN / Error</text>
+</g>
+<g class="edge-label" data-from="SafetyDecision" data-to="TriageNode" data-label="CLEAR">
+  <rect x="867.5146666666665" y="1522.7369999999999" width="53.29" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="894.1596666666665" y="1537.887" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">CLEAR</text>
+</g>
+<g class="edge-label" data-from="ConfCheck" data-to="HumanEsc" data-label="Yes">
+  <rect x="557.9281666666666" y="1958.8349999999998" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="576.2571666666665" y="1973.985" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="ConfCheck" data-to="FanOut" data-label="No: HIGH/MEDIUM">
+  <rect x="902.3605833333331" y="1958.8349999999998" width="103.18599999999999" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="953.9535833333331" y="1973.985" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No: HIGH/MEDIUM</text>
+</g>
+<g class="edge-label" data-from="SaveMem" data-to="PersistHist" data-label="Yes">
+  <rect x="846.2730833333331" y="2552.877" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="864.6020833333331" y="2568.027" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="edge-label" data-from="SaveMem" data-to="Aggregator" data-label="No">
+  <rect x="1028.4480833333332" y="2552.877" width="30.718000000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1043.8070833333331" y="2568.027" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No</text>
+</g>
+<g class="edge-label" data-from="UserBook" data-to="EndNode" data-label="No / Urgent Path">
+  <rect x="532.9289166666665" y="3313.0140000000006" width="92.49400000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="579.1759166666666" y="3328.1640000000007" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">No / Urgent Path</text>
+</g>
+<g class="edge-label" data-from="UserBook" data-to="ConfirmTX" data-label="Yes">
+  <rect x="849.0039166666666" y="3119.2140000000004" width="36.658" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="867.3329166666665" y="3134.3640000000005" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Yes</text>
+</g>
+<g class="node" data-id="Start" data-label="Patient Enters Portal / Starts Voice Call" data-shape="stadium">
+  <rect x="248.9853333333333" y="40" width="266.47299999999996" height="36.900000000000006" rx="18.450000000000003" ry="18.450000000000003" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="382.2218333333333" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Patient Enters Portal / Starts Voice Call</text>
+</g>
+<g class="node" data-id="InputMode" data-label="Input Mode?" data-shape="diamond">
+  <polygon points="382.2218333333333,124.9 450.7648333333333,193.443 382.2218333333333,261.986 313.6788333333333,193.443" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="382.2218333333333" y="193.443" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Input Mode?</text>
+</g>
+<g class="node" data-id="Whisper" data-label="Groq Whisper API: whisper-large-v3-turbo" data-shape="rectangle">
+  <rect x="184.04591666666659" y="378.28600000000006" width="287.22099999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="327.6564166666666" y="396.73600000000005" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Groq Whisper API: whisper-large-v3-turbo</text>
+</g>
+<g class="node" data-id="Transcript" data-label="Generate Transcript &amp; Preview in UI" data-shape="rectangle">
+  <rect x="202.57091666666668" y="463.18600000000004" width="250.17099999999994" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="327.65641666666664" y="481.636" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Generate Transcript &amp; Preview in UI</text>
+</g>
+<g class="node" data-id="IntakeNode" data-label="IntakeNode" data-shape="rectangle">
+  <rect x="327.90183333333323" y="548.086" width="108.64" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="382.2218333333332" y="566.5360000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">IntakeNode</text>
+</g>
+<g class="node" data-id="ConsentCheck" data-label="patient_id Present AND consent_memory == True?" data-shape="diamond">
+  <polygon points="382.2218333333333,632.986 562.2853333333333,813.0495 382.2218333333333,993.1129999999999 202.15833333333333,813.0495" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="382.2218333333333" y="813.0495" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">patient_id Present AND consent_memory == True?</text>
+</g>
+<g class="node" data-id="MemLookup" data-label="2. PatientMemoryAgent: Query SQLite patient_history" data-shape="rectangle">
+  <rect x="110.26841666666667" y="1109.4129999999998" width="350.9469999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="285.7419166666666" y="1127.8629999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">2. PatientMemoryAgent: Query SQLite patient_history</text>
+</g>
+<g class="node" data-id="MemSkip" data-label="2. PatientMemoryAgent: Mark SKIPPED in Trace" data-shape="rectangle">
+  <rect x="489.21541666666656" y="1109.4129999999998" width="324.27099999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="651.3509166666665" y="1127.8629999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">2. PatientMemoryAgent: Mark SKIPPED in Trace</text>
+</g>
+<g class="node" data-id="SafetyGate" data-label="3. SafetyGateAgent: Run Negation-Aware YAML Rules + LLM Check" data-shape="rectangle">
+  <rect x="164.51133333333325" y="1194.3129999999999" width="435.421" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="382.2218333333333" y="1212.763" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">3. SafetyGateAgent: Run Negation-Aware YAML Rules + LLM Check</text>
+</g>
+<g class="node" data-id="SafetyDecision" data-label="Safety Assessment Status?" data-shape="diamond">
+  <polygon points="382.2218333333332,1279.213 494.4838333333332,1391.475 382.2218333333332,1503.7369999999999 269.9598333333332,1391.475" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="382.2218333333332" y="1391.475" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Safety Assessment Status?</text>
+</g>
+<g class="node" data-id="UrgentStop" data-label="Mark Triage, Info &amp; Appt Agents as SKIPPED" data-shape="rectangle">
+  <rect x="49.26249999999993" y="1947.2349999999997" width="299.818" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="199.17149999999992" y="1965.6849999999997" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Mark Triage, Info &amp; Appt Agents as SKIPPED</text>
+</g>
+<g class="node" data-id="UrgentAdvisory" data-label="Format Emergency 112 Immediate-Care Advisory" data-shape="rectangle">
+  <rect x="40" y="2638.177" width="318.3429999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="199.17149999999995" y="2656.627" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Format Emergency 112 Immediate-Care Advisory</text>
+</g>
+<g class="node" data-id="Aggregator" data-label="Aggregator" data-shape="rectangle">
+  <rect x="668.4054166666665" y="2711.077" width="110.122" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="723.4664166666665" y="2729.527" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Aggregator</text>
+</g>
+<g class="node" data-id="HumanEsc" data-label="Mark Downstream Agents SKIPPED &amp; Escalate to Staff" data-shape="rectangle">
+  <rect x="264.0045" y="2032.1349999999998" width="354.6519999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="441.3304999999999" y="2050.5849999999996" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Mark Downstream Agents SKIPPED &amp; Escalate to Staff</text>
+</g>
+<g class="node" data-id="TriageNode" data-label="4. TriageRouterAgent: Map Concern to Department via departments.yaml" data-shape="rectangle">
+  <rect x="664.5776666666665" y="1596.0369999999998" width="459.87399999999985" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="894.5146666666664" y="1614.4869999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">4. TriageRouterAgent: Map Concern to Department via departments.yaml</text>
+</g>
+<g class="node" data-id="ConfCheck" data-label="Routing Confidence == LOW?" data-shape="diamond">
+  <polygon points="894.5146666666664,1680.937 1011.9636666666663,1798.386 894.5146666666664,1915.835 777.0656666666664,1798.386" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="894.5146666666664" y="1798.386" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Routing Confidence == LOW?</text>
+</g>
+<g class="node" data-id="FanOut" data-label="Parallel Fan-Out: asyncio.gather" data-shape="hexagon">
+  <polygon points="838.1330833333332,2032.1349999999998 1070.588083333333,2032.1349999999998 1079.813083333333,2050.5849999999996 1070.588083333333,2069.035 838.1330833333332,2069.035 828.9080833333331,2050.5849999999996" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="954.3605833333331" y="2050.5849999999996" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Parallel Fan-Out: asyncio.gather</text>
+</g>
+<g class="node" data-id="InfoAgent" data-label="5A. InformationAgent: Query FAISS Index filtered by department_id" data-shape="rectangle">
+  <rect x="485.41975" y="2117.035" width="423.56499999999977" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="697.2022499999999" y="2135.4849999999997" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">5A. InformationAgent: Query FAISS Index filtered by department_id</text>
+</g>
+<g class="node" data-id="ApptAgent" data-label="5B. AppointmentAgent: Query SQLite appointment_slots where is_available=1" data-shape="rectangle">
+  <rect x="936.9847499999997" y="2117.035" width="483.5859999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1178.7777499999997" y="2135.4849999999997" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">5B. AppointmentAgent: Query SQLite appointment_slots where is_available=1</text>
+</g>
+<g class="node" data-id="FanIn" data-label="Fan-In Synchronizer" data-shape="hexagon">
+  <polygon points="871.1075833333331,2201.935 1037.6135833333333,2201.935 1046.8385833333332,2220.3849999999998 1037.6135833333333,2238.835 871.1075833333331,2238.835 861.8825833333331,2220.3849999999998" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="954.3605833333331" y="2220.3849999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Fan-In Synchronizer</text>
+</g>
+<g class="node" data-id="SaveMem" data-label="consent_memory == True?" data-shape="diamond">
+  <polygon points="954.3605833333331,2286.835 1065.881583333333,2398.356 954.3605833333331,2509.8770000000004 842.8395833333332,2398.356" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="954.3605833333331" y="2398.356" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">consent_memory == True?</text>
+</g>
+<g class="node" data-id="PersistHist" data-label="Save New Routing Record to SQLite patient_history" data-shape="rectangle">
+  <rect x="695.5980833333332" y="2638.177" width="338.3499999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="864.7730833333331" y="2656.627" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Save New Routing Record to SQLite patient_history</text>
+</g>
+<g class="node" data-id="RenderUI" data-label="Render Result, Execution Trace &amp; TTS Spoken Audio" data-shape="rectangle">
+  <rect x="547.2519166666665" y="2795.9770000000003" width="352.4289999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="723.4664166666664" y="2814.427" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Render Result, Execution Trace &amp; TTS Spoken Audio</text>
+</g>
+<g class="node" data-id="UserBook" data-label="User Clicks 'Confirm Slot'?" data-shape="diamond">
+  <polygon points="723.4664166666665,2880.8770000000004 833.1349166666665,2990.5455 723.4664166666665,3100.214 613.7979166666665,2990.5455" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="723.4664166666665" y="2990.5455" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">User Clicks &#39;Confirm Slot&#39;?</text>
+</g>
+<g class="node" data-id="EndNode" data-label="Workflow Complete" data-shape="stadium">
+  <rect x="647.6574166666664" y="3362.3140000000008" width="151.618" height="36.900000000000006" rx="18.450000000000003" ry="18.450000000000003" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="723.4664166666664" y="3380.7640000000006" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Workflow Complete</text>
+</g>
+<g class="node" data-id="ConfirmTX" data-label="Atomic SQLite Update: Set is_available = False &amp; Generate BK-XXXX" data-shape="rectangle">
+  <rect x="649.4229166666664" y="3192.5140000000006" width="436.162" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="867.5039166666664" y="3210.9640000000004" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Atomic SQLite Update: Set is_available = False &amp; Generate BK-XXXX</text>
+</g>
+<g class="node" data-id="SendGmail" data-label="SMTP SSL Dispatch Confirmation Email to Gmail" data-shape="rectangle">
+  <rect x="709.0734166666665" y="3277.4140000000007" width="316.86099999999993" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="867.5039166666664" y="3295.8640000000005" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">SMTP SSL Dispatch Confirmation Email to Gmail</text>
+</g>
+</svg>

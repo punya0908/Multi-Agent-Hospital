@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1252.63275 1205.1000000000001" width="1252.63275" height="1205.1000000000001" style="--bg:#141414;--fg:#fafafa;--line:#8a8a8a;--accent:#8cb7fa;--muted:#b5b5b5;--surface:#1f1f1f;--border:#424242">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Google%20Sans:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Google Sans', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="Patient" data-to="P1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Raw Text / Voice Audio + Consent" points="342.519,76.9 342.519,203.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1" data-to="D1" data-style="solid" data-arrow-start="true" data-arrow-end="true" data-label="Read/Write Prior History (if consented)" points="317.00233333333335,273.79999999999995 317.00233333333335,705.7000000000002 251.5,705.7000000000002 251.5,770.1000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<polyline class="edge" data-from="P1" data-to="P2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Validated PatientIntakeRecord" points="368.03566666666677,273.79999999999995 368.03566666666677,299.9 433.538,299.9 433.538,368.2 490.5677500000001,368.2 490.5677500000001,390.09999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D2" data-to="P2" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Urgent/Negation Rules" points="587.6574166666667,253.99999999999997 587.6574166666667,368.2 539.1310833333334,368.2 539.1310833333334,390.09999999999997" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2" data-to="P6" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="URGENT / UNCERTAIN Status" points="490.5677500000001,460.79999999999995 490.5677500000001,575.0000000000001 363.3573333333334,575.0000000000001 363.3573333333334,917.2 547.7146666666667,917.2 547.7146666666667,941.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2" data-to="P3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="CLEAR Status + IntakeRecord" points="539.1310833333334,460.79999999999995 539.1310833333334,486.9 665.9663333333333,486.9 665.9663333333333,555.2 720.5260833333333,555.2 720.5260833333333,583.1000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D3" data-to="P3" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Approved Dept Registry" points="819.88625,440.99999999999994 819.88625,555.2 770.8184166666667,555.2 770.8184166666667,583.1000000000001" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3" data-to="P4" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="RoutingDecision (department_id)" points="720.5260833333333,653.8000000000002 720.5260833333333,673.9000000000001 659.11225,673.9000000000001 659.11225,742.2 605.7875000000001,742.2 605.7875000000001,770.1000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P3" data-to="P5" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="RoutingDecision (department_id)" points="770.8184166666667,653.8000000000002 770.8184166666667,685.9000000000001 832.23225,685.9000000000001 832.23225,754.2 933.16,754.2 933.16,770.1000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D4" data-to="P4" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Dept-Filtered Chunks" points="505.1913333333333,634.0000000000001 505.1913333333334,742.2 552.0371666666667,742.2 552.0371666666667,770.1000000000001" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P4" data-to="P6" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="DepartmentInformation + Citations" points="578.9123333333334,840.8000000000002 578.9123333333333,941.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D5" data-to="P5" data-style="solid" data-arrow-start="true" data-arrow-end="true" data-label="Query Available / Lock Confirmed Slot" points="1107.18375,634.0000000000001 1107.18375,754.2 1018.602,754.2 1018.602,770.1000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" marker-start="url(#arrowhead-start)" />
+<polyline class="edge" data-from="P5" data-to="P6" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Offered AppointmentSlot List" points="947.4003333333334,840.8000000000002 947.4003333333334,872.9000000000001 896.466,872.9000000000001 896.466,917.2 610.11,917.2 610.11,941.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P6" data-to="Patient" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Consolidated Intake Summary / 112 Advisory" points="516.517,941.2 516.517,929.2 145.5,929.2 145.5,112.9 317.76725,112.9 317.76725,76.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Patient" data-to="P5" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Confirm Selected Slot ID" points="367.27075,76.9 367.27075,112.9 990.7347500000001,112.9 990.7347500000001,754.2 975.881,754.2 975.881,770.1000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P5" data-to="P6" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Booking Reference (BK-XXXX)" points="1004.3616666666667,840.8000000000002 1004.3616666666667,884.9000000000001 1055.296,884.9000000000001 1055.296,929.2 641.3076666666667,929.2 641.3076666666667,941.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P6" data-to="Admin" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="HTML Confirmation Email" points="578.9123333333333,1011.9000000000001 578.9123333333334,1128.2" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="Patient" data-to="P1" data-label="Raw Text / Voice Audio + Consent">
+  <rect x="256.019" y="119.9" width="172.684" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="342.361" y="135.05" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Raw Text / Voice Audio + Consent</text>
+</g>
+<g class="edge-label" data-from="P1" data-to="D1" data-label="Read/Write Prior History (if consented)">
+  <rect x="152.5" y="712.7000000000002" width="197.038" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="251.019" y="727.8500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Read/Write Prior History (if consented)</text>
+</g>
+<g class="edge-label" data-from="P1" data-to="P2" data-label="Validated PatientIntakeRecord">
+  <rect x="353.538" y="306.9" width="159.61600000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="433.346" y="322.04999999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Validated PatientIntakeRecord</text>
+</g>
+<g class="edge-label" data-from="D2" data-to="P2" data-label="Urgent/Negation Rules">
+  <rect x="525.6574166666667" y="306.9" width="123.38200000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="587.3484166666667" y="322.04999999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Urgent/Negation Rules</text>
+</g>
+<g class="edge-label" data-from="P2" data-to="P6" data-label="URGENT / UNCERTAIN Status">
+  <rect x="284.3573333333334" y="879.9000000000001" width="157.83399999999997" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="363.27433333333335" y="895.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">URGENT / UNCERTAIN Status</text>
+</g>
+<g class="edge-label" data-from="P2" data-to="P3" data-label="CLEAR Status + IntakeRecord">
+  <rect x="586.4663333333333" y="493.9" width="158.42800000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="665.6803333333334" y="509.04999999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">CLEAR Status + IntakeRecord</text>
+</g>
+<g class="edge-label" data-from="D3" data-to="P3" data-label="Approved Dept Registry">
+  <rect x="754.38625" y="493.9" width="130.51000000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="819.64125" y="509.04999999999995" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Approved Dept Registry</text>
+</g>
+<g class="edge-label" data-from="P3" data-to="P4" data-label="RoutingDecision (department_id)">
+  <rect x="574.11225" y="680.9000000000001" width="169.11999999999998" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="658.67225" y="696.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">RoutingDecision (department_id)</text>
+</g>
+<g class="edge-label" data-from="P3" data-to="P5" data-label="RoutingDecision (department_id)">
+  <rect x="747.23225" y="692.9000000000001" width="169.11999999999998" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="831.79225" y="708.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">RoutingDecision (department_id)</text>
+</g>
+<g class="edge-label" data-from="D4" data-to="P4" data-label="Dept-Filtered Chunks">
+  <rect x="446.1913333333334" y="680.9000000000001" width="117.44200000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="504.9123333333334" y="696.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Dept-Filtered Chunks</text>
+</g>
+<g class="edge-label" data-from="P4" data-to="P6" data-label="DepartmentInformation + Citations">
+  <rect x="492.41233333333344" y="867.9000000000001" width="172.08999999999997" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="578.4573333333334" y="883.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">DepartmentInformation + Citations</text>
+</g>
+<g class="edge-label" data-from="D5" data-to="P5" data-label="Query Available / Lock Confirmed Slot">
+  <rect x="1010.18375" y="692.9000000000001" width="193.47399999999996" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1106.92075" y="708.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Query Available / Lock Confirmed Slot</text>
+</g>
+<g class="edge-label" data-from="P5" data-to="P6" data-label="Offered AppointmentSlot List">
+  <rect x="821.966" y="879.9000000000001" width="148.33" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="896.131" y="895.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Offered AppointmentSlot List</text>
+</g>
+<g class="edge-label" data-from="P6" data-to="Patient" data-label="Consolidated Intake Summary / 112 Advisory">
+  <rect x="36.000000000000014" y="891.9000000000001" width="218.422" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="145.211" y="907.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Consolidated Intake Summary / 112 Advisory</text>
+</g>
+<g class="edge-label" data-from="Patient" data-to="P5" data-label="Confirm Selected Slot ID">
+  <rect x="926.7347500000001" y="525.7" width="127.54" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="990.5047500000001" y="540.85" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Confirm Selected Slot ID</text>
+</g>
+<g class="edge-label" data-from="P5" data-to="P6" data-label="Booking Reference (BK-XXXX)">
+  <rect x="974.2960000000002" y="891.9000000000001" width="161.992" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1055.2920000000001" y="907.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Booking Reference (BK-XXXX)</text>
+</g>
+<g class="edge-label" data-from="P6" data-to="Admin" data-label="HTML Confirmation Email">
+  <rect x="511.4123333333335" y="1054.9" width="134.668" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="578.7463333333335" y="1070.0500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">HTML Confirmation Email</text>
+</g>
+<g class="node" data-id="Patient" data-label="👤 Patient" data-shape="stadium">
+  <rect x="293.0155" y="40" width="99.007" height="36.900000000000006" rx="18.450000000000003" ry="18.450000000000003" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="342.519" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">👤 Patient</text>
+</g>
+<g class="node" data-id="Admin" data-label="🏥 Hospital Operator (Gmail)" data-shape="stadium">
+  <rect x="473.8338333333334" y="1128.2" width="210.15699999999995" height="36.900000000000006" rx="18.450000000000003" ry="18.450000000000003" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="578.9123333333334" y="1146.65" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">🏥 Hospital Operator (Gmail)</text>
+</g>
+<g class="node" data-id="P1" data-label="1.0
+Multimodal Intake &amp;
+Memory Extraction" data-shape="rounded">
+  <rect x="265.96900000000005" y="203.1" width="153.10000000000002" height="70.7" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="342.51900000000006" y="238.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="342.51900000000006" dy="-12.350000000000001">1.0</tspan><tspan x="342.51900000000006" dy="16.900000000000002">Multimodal Intake &amp;</tspan><tspan x="342.51900000000006" dy="16.900000000000002">Memory Extraction</tspan></text>
+</g>
+<g class="node" data-id="P2" data-label="2.0
+Mandatory Safety
+Gate Engine" data-shape="rounded">
+  <rect x="442.00441666666677" y="390.09999999999997" width="145.69" height="70.7" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="514.8494166666668" y="425.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="514.8494166666668" dy="-12.350000000000001">2.0</tspan><tspan x="514.8494166666668" dy="16.900000000000002">Mandatory Safety</tspan><tspan x="514.8494166666668" dy="16.900000000000002">Gate Engine</tspan></text>
+</g>
+<g class="node" data-id="P3" data-label="3.0
+Department Triage
+Routing" data-shape="rounded">
+  <rect x="670.23375" y="583.1000000000001" width="150.877" height="70.7" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="745.67225" y="618.4500000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="745.67225" dy="-12.350000000000001">3.0</tspan><tspan x="745.67225" dy="16.900000000000002">Department Triage</tspan><tspan x="745.67225" dy="16.900000000000002">Routing</tspan></text>
+</g>
+<g class="node" data-id="P4" data-label="4.0
+FAISS RAG
+Information Retrieval" data-shape="rounded">
+  <rect x="498.2868333333334" y="770.1000000000001" width="161.251" height="70.7" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="578.9123333333334" y="805.4500000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="578.9123333333334" dy="-12.350000000000001">4.0</tspan><tspan x="578.9123333333334" dy="16.900000000000002">FAISS RAG</tspan><tspan x="578.9123333333334" dy="16.900000000000002">Information Retrieval</tspan></text>
+</g>
+<g class="node" data-id="P5" data-label="5.0
+Appointment Lookup &amp;
+Booking Confirmation" data-shape="rounded">
+  <rect x="890.439" y="770.1000000000001" width="170.884" height="70.7" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="975.881" y="805.4500000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="975.881" dy="-12.350000000000001">5.0</tspan><tspan x="975.881" dy="16.900000000000002">Appointment Lookup &amp;</tspan><tspan x="975.881" dy="16.900000000000002">Booking Confirmation</tspan></text>
+</g>
+<g class="node" data-id="P6" data-label="6.0
+Response Aggregation &amp;
+SMTP Notification" data-shape="rounded">
+  <rect x="485.31933333333336" y="941.2" width="187.18599999999998" height="70.7" rx="6" ry="6" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="578.9123333333333" y="976.5500000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="578.9123333333333" dy="-12.350000000000001">6.0</tspan><tspan x="578.9123333333333" dy="16.900000000000002">Response Aggregation &amp;</tspan><tspan x="578.9123333333333" dy="16.900000000000002">SMTP Notification</tspan></text>
+</g>
+<g class="node" data-id="D1" data-label="D1: SQLite patient_history" data-shape="cylinder">
+  <rect x="157.16599999999994" y="777.1000000000001" width="188.668" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="157.16599999999994" y1="777.1000000000001" x2="157.16599999999994" y2="814.0000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="345.83399999999995" y1="777.1000000000001" x2="345.83399999999995" y2="814.0000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="251.49999999999994" cy="814.0000000000001" rx="94.334" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="251.49999999999994" cy="777.1000000000001" rx="94.334" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="251.49999999999994" y="795.5500000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D1: SQLite patient_history</text>
+</g>
+<g class="node" data-id="D2" data-label="D2: safety_rules.yaml" data-shape="cylinder">
+  <rect x="504.06791666666675" y="210.1" width="167.179" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="504.06791666666675" y1="210.1" x2="504.06791666666675" y2="247" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="671.2469166666667" y1="210.1" x2="671.2469166666667" y2="247" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="587.6574166666668" cy="247" rx="83.5895" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="587.6574166666668" cy="210.1" rx="83.5895" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="587.6574166666668" y="228.55" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D2: safety_rules.yaml</text>
+</g>
+<g class="node" data-id="D3" data-label="D3: departments.yaml" data-shape="cylinder">
+  <rect x="737.03775" y="397.09999999999997" width="165.697" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="737.03775" y1="397.09999999999997" x2="737.03775" y2="434" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="902.73475" y1="397.09999999999997" x2="902.73475" y2="434" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="819.88625" cy="434" rx="82.8485" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="819.88625" cy="397.09999999999997" rx="82.8485" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="819.88625" y="415.54999999999995" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D3: departments.yaml</text>
+</g>
+<g class="node" data-id="D4" data-label="D4: FAISS Vector KB" data-shape="cylinder">
+  <rect x="423.08383333333336" y="590.1000000000001" width="164.21499999999997" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="423.08383333333336" y1="590.1000000000001" x2="423.08383333333336" y2="627.0000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="587.2988333333333" y1="590.1000000000001" x2="587.2988333333333" y2="627.0000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="505.1913333333333" cy="627.0000000000001" rx="82.10749999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="505.1913333333333" cy="590.1000000000001" rx="82.10749999999999" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="505.1913333333333" y="608.5500000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D4: FAISS Vector KB</text>
+</g>
+<g class="node" data-id="D5" data-label="D5: SQLite appointment_slots" data-shape="cylinder">
+  <rect x="1001.73475" y="590.1000000000001" width="210.89799999999997" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1001.73475" y1="590.1000000000001" x2="1001.73475" y2="627.0000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1212.63275" y1="590.1000000000001" x2="1212.63275" y2="627.0000000000001" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1107.18375" cy="627.0000000000001" rx="105.44899999999998" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1107.18375" cy="590.1000000000001" rx="105.44899999999998" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1107.18375" y="608.5500000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">D5: SQLite appointment_slots</text>
+</g>
+</svg>

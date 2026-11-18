@@ -1,0 +1,66 @@
+# ==========================================
+# Environment & Secrets (Keep .env.example!)
+# ==========================================
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+Diagrams-Hydrogen/
+ENV/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Linters
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# SQLite Databases (Auto-seeded on startup)
+# ==========================================
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+hospital.db
+
+# ==========================================
+# Frontend (Node / React / Vite / TypeScript)
+# ==========================================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================================
+# Logs, Caches & OS / IDE Files
+# ==========================================
+*.log
+.cache/
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
